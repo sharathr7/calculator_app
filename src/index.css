@@ -1,13 +1,137 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  user-select: none;
+  padding: 1rem;
+}
+
+.main-div {
+  background-color: black;
+  border-radius: 15px;
+  height: 420px;
+  width: 450px;
+
+}
+
+.row1 {
+  display: flex;
+  margin-top: 10px;
+  gap: 0.5rem;
+}
+
+.button {
+  height: 55px;
+  line-height: 48px;
+  width: 90px;
+  background-color: grey;
+  border: 1px solid black;
+  border: none;
+  transition: transform .1s ease;
+  border-radius: 5px;
+  
+
+}
+
+.button:active {
+  transform: translateY(5px);
+}
+
+.display {
+  height: 55px;
+  width: 360px;
+  background-color: #dcdbe1;
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+.content {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin: 4px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row2 {
+  display: flex;
+}
+
+.row3 {
+  display: flex;
+}
+
+.row4 {
+  display: flex;
+}
+
+.row5 {
+  display: flex;
+}
+
+p {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.zero {
+  color: white;
+  font-size: xx-large;
+}
+
+.dark {
+  background-color: darkgrey;
+  width: 200px;
+}
+
+.dark p {
+  color: white;
+
+}
+
+.cyan {
+  background-color: blue;
+  width: 200px;
+}
+
+.button-clear {
+  width: 50px;
+  margin: 0;
+  background-color: red;
+}
+
+
+@media only screen and (max-width: 500px){
+  .main-div {
+   width: 340px;
+   margin: 1rem;
+  }
+  .button{
+    width: 70px;
+  }
+  .display{
+    width: 240px;
+  }
 }
